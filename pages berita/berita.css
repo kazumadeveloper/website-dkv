@@ -1,0 +1,183 @@
+:root{
+    --warna-text-putih: #fefefe;
+    --warna-text-putih-nonactive: #fefefe7c;
+    --warna-text-hitam: #080808;
+    --warna-text-hitam-nonactive: #676767;
+    --link-hover: #c7d2fe;
+    --bg-dark: #121212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header.navbar-container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 999;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    background-color: var(--bg-dark);
+  }
+  
+  .navbar-container .logo {
+    width: 60px;
+  }
+  
+  .navbar-container .logo img {
+    width: 50px;
+  }
+  
+  .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-container .nav-list li {
+    list-style-type: none;
+  }
+  
+  .navbar-container .nav-list li i {
+    padding: 10px 20px;
+    font-size: 19px;
+    color: var(--warna-text-putih);
+    transition: .3s;
+  }
+  
+  .navbar-container .nav-list li i:hover{
+    color: red;
+  }
+  
+  .navbar-container .nav-list li a {
+    padding: 10px 20px ;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--warna-text-putih);
+    transition: .3s;
+  }
+  
+  .navbar-container .nav-list li a:hover {
+   color: var(--link-hover);
+  }
+
+  .carousel-txt{
+    color: var(--warna-text-putih);
+  }
+
+
+
+  /* Berita terbaru */
+
+  main{
+    width: 100%;
+    background-color: var(--bg-dark);
+  }
+
+  .berita-terbaru{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .berita-terbaru-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 6rem 3rem 1rem 3rem;
+  }
+
+  .berita-terbaru-header h1{
+    color: var(--warna-text-putih);
+    text-wrap: nowrap;
+  }
+
+  .line{
+    height: 2px;
+    width: 100%;
+    background-color: var(--warna-text-putih-nonactive);
+  }
+
+  .berita-container{
+    width: 100%;
+    padding: 2rem 3rem;;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .berita-card{
+    width: 30%;
+    padding: 10px;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  .berita-card a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+
+    color: var(--warna-text-putih);
+    text-decoration: none;
+    transition: .3s;
+    filter: grayscale(100%);
+  }
+
+  .berita-card a:hover{
+    color: var(--link-hover);
+    filter: grayscale(0%);
+    scale: 1.005;
+  }
+
+
+
+  .berita-card-title{
+    line-height: 0px;
+  }
+
+  .berita-card img{
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .tanggal-terbit{
+    color: var(--warna-text-putih-nonactive);
+    font-size: .9rem;
+    line-height: 5px;
+    margin-top: 5px;
+  }

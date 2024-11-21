@@ -1,0 +1,38 @@
+:root{
+    --warna-text-putih: #fefefe;
+    --warna-text-putih-nonactive: #fefefe7c;
+    --warna-text-hitam: #080808;
+    --warna-text-hitam-nonactive: #676767;
+    --link-hover: #c7d2fe;
+    --bg-dark: #121212;
+}
+
+
+
+.isi-berita-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi-berita{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+h1, .deskripsi{
+    color: var(--warna-text-putih);
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.gambar-berita{
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,292 @@
+:root {
+  --warna-text-putih: #fefefe;
+  --warna-text-putih-nonactive: #fefefe7c;
+  --warna-text-hitam: #080808;
+  --warna-text-hitam-nonactive: #676767;
+  --link-hover: #ffa500;
+  --link-hover-berita: #bfdbfe;
+  --bg-dark: #121212;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 999;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  background-color: var(--bg-dark);
+}
+
+.navbar-container .logo {
+  width: 60px;
+}
+
+.navbar-container .logo img {
+  width: 50px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-container .nav-list ul {
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+.navbar-container .nav-list li i {
+  padding: 10px 20px;
+  font-size: 19px;
+  color: var(--warna-text-putih);
+  transition: 0.3s;
+}
+
+.navbar-container .nav-list li i:hover {
+  color: red;
+}
+
+.navbar-container .nav-list li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--warna-text-putih);
+  transition: 0.3s;
+}
+
+.navbar-container .nav-list li a:hover {
+  color: var(--link-hover);
+}
+
+.btn-login-register button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff9b05;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-login-register{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.carousel-txt {
+  color: var(--warna-text-putih);
+}
+
+/* Berita terbaru */
+
+main {
+  width: 100%;
+  background-color: var(--bg-dark);
+}
+
+.berita-terbaru {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.berita-terbaru-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 3rem 1rem 3rem;
+
+  animation: muncul linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.berita-terbaru-header h1 {
+  color: var(--warna-text-putih);
+  text-wrap: nowrap;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--warna-text-putih-nonactive);
+}
+
+.berita-container {
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.berita-card {
+  width: 30%;
+  padding: 10px;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  animation: muncul linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.berita-card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+
+  color: var(--warna-text-putih);
+  text-decoration: none;
+  transition: 0.3s;
+  filter: grayscale(60%);
+}
+
+.berita-card a:hover {
+  color: var(--link-hover-berita);
+  filter: grayscale(0%);
+  scale: 1.005;
+}
+
+.berita-card-title {
+  line-height: auto;
+}
+
+.berita-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.tanggal-terbit {
+  color: var(--warna-text-putih-nonactive);
+  font-size: 0.9rem;
+  line-height: 5px;
+  margin-top: 5px;
+}
+
+footer {
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(Serenmist_20-_2012.jpeg);
+  background-size: cover;
+  background-position: center;
+  animation: muncul-footer linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+  color: white;
+}
+
+.dalam-footer {
+  width: 100%;
+}
+
+.isi-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.text-logo {
+  text-align: center;
+  width: 50%;
+}
+
+.text-logo p {
+  font-size: 18px;
+  color: var(--putih);
+  font-weight: bolder;
+}
+
+.sosial-media {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 23px;
+}
+
+.sosial-media a {
+  color: var(--putih);
+  text-decoration: none;
+}
+
+.sosial-media a:hover {
+  color: var(--orange);
+}
+
+.bawah-footer {
+  width: 70%;
+  height: 1px;
+  background-color: var(--putih);
+}
+
+.bawah-footer2 {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--putih);
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    size: 1;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

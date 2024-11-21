@@ -1,0 +1,119 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --warna-text-putih: #fefefe;
+    --warna-text-putih-nonactive: #fefefe;
+    --warna-text-hitam: #080808;
+    --warna-text-hitam-nonactive: #676767;
+}
+
+.background{
+    background: url('img register/Fuchsia2018.jpeg.jpg');
+    background-size: cover;
+}
+
+.logo-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 0;
+}
+
+.logo{
+    width: 60px;
+    margin: 20px;
+}
+
+.register-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 350px;
+    height: 450px;
+    backdrop-filter: blur(12px) saturate(176%);
+    -webkit-backdrop-filter: blur(12px) saturate(176%);
+    background-color: rgba(254, 254, 254, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.register-content h2{
+    color: var(--warna-text-putih);
+    font-weight: 300;
+}
+
+.register-content input{
+    padding: 5px;
+    width: 250px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: black;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid var(--warna-text-putih);
+    color: white;
+}
+
+.register-content button{
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 300px;
+    border: none;
+    background-color: var(--warna-text-putih);
+    color: var(--warna-text-hitam);
+    cursor: pointer;
+}
+
+.register-content img{
+    border-bottom: solid 1px var(--warna-text-putih);
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.email-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-input input{
+    width: 220px;
+}
+
+.register-content span{
+    color: var(--warna-text-putih);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.register-content span a{
+    text-decoration: underline;
+    color: var(--warna-text-putih);
+}
+
+input::placeholder{
+    color: var(--warna-text-putih-nonactive);
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas</title>
+    <link rel="stylesheet" href="kelas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img kelas/logo.png" alt="Logo Jurusan DKV"
+        /></a>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">Profile Guru</a>
+            <a href="#">Kelas</a>
+            <i class="fa-solid fa-right-from-bracket"><a href="#"></a></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container-besar">
+        <div class="judul">
+          <h1>Kelas DKV</h1>
+        </div>
+        <div class="container-content">
+          <div class="content">
+            <div class="container">
+              <div class="box">
+                <div>
+                  <strong>X</strong>
+                  <p>DKV</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button class="button-atas">Lihat Kelas <i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  <button id="xi-dkv-3" class="kelas-btn">X DKV 1</button>
+                  <button id="xi-dkv-3" class="button-bawah kelas-btn">
+                    X DKV 2
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="container">
+              <div class="box">
+                <div>
+                  <strong>XI</strong>
+                  <p>DKV</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn">
+              <button class="button-atas">Lihat Kelas <i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  <button id="xi-dkv-1" class="kelas-btn">XI DKV 1</button>
+                  <button id="xi-dkv-2" class="kelas-btn">XI DKV 2</button>
+                  <button id="xi-dkv-3" class="button-bawah kelas-btn">
+                    XI DKV 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="container">
+              <div class="box">
+                <div>
+                  <strong>XII</strong>
+                  <p>MM</p>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button class="button-atas">Lihat Kelas <i class="fa-solid fa-caret-down"></i></button>
+              <div class="dropdown">
+                <div class="dropdown-button">
+                  <button id="xii-mm-1" class="kelas-btn">XII MM 1</button>
+                  <button id="xii-mm-2" class="kelas-btn">XII MM 2</button>
+                  <button id="xii-mm-3" class="button-bawah kelas-btn">
+                    XII MM 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal">
+          <i class="close"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></i>
+          <div id="tableContainer"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="data.js"></script>
+  </body>
+</html>

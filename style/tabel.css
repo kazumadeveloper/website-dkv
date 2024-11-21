@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header.navbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .navbar-container .logo {
+    width: 60px;
+  }
+  
+  .navbar-container .logo img {
+    width: 50px;
+  }
+  
+  .navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navbar-container .nav-list li {
+    list-style-type: none;
+  }
+  
+  .navbar-container .nav-list li i {
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+  
+  .navbar-container .nav-list li i:hover{
+    color: red;
+  }
+  
+  .navbar-container .nav-list li a {
+    padding: 10px 20px ;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .navbar-container .nav-list li a:hover {
+    color: blue;
+  }
+
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #ff9b05;
+    font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f5f5f5;
+}

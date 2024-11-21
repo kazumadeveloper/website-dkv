@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DKV - Berita</title>
+    <link rel="stylesheet" href="style/berita.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <a href="berita.html"><img src="logo.png" alt="Logo Jurusan DKV" /></a>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <a href="berita-belum-login.html">Berita</a>
+            <a href="login.html">Profile Guru</a>
+            <a href="login.html">Kelas</a>
+          </li>
+        </ul>
+
+        <div class="btn-login-register">
+          <a href="login.html"><button>Login</button></a>
+          <a href="register.html"><button>Register</button></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="Fuchsia2018.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-txt">
+                LAGI! MULTIMEDIA DKV JUARA UMUM #1 HUT SKENSA
+              </h5>
+              <p class="carousel-txt">
+                Multimedia DKV keluar sebagai Juara Umum #1 serangkaian Lomba
+                HUT SKENSA Ke-62 sekaligus menjadi KADO MANIS HUT SKENSA
+                TERAKHIR untuk Kompetensi Keahlian Multimedia
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="Fuchsia2018.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-txt">
+                Pengumuman Juara lomba dalam rangka Hut SMK Negeri 1 Denpasar
+                yang ke-62
+              </h5>
+              <p class="carousel-txt">
+                Berkat kerja keras yang telah dilakukan oleh siswa-siswi MM &
+                DKV selama perlombaan, sehingga MM & DKV tetap menjadi juara
+                umum 1 selama 4 tahun berturut-turut.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Fuchsia2018.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-txt">
+                JUARA 1 LOMBA MENULIS PRASI - BULAN BAHASA BALI VI PROVINSI BALI
+                2024
+              </h5>
+              <p class="carousel-txt">
+                Selamat kepada I NYOMAN BAGUS DHARMA SIDHI @bagusdharma.s_ (XI
+                MM2) dan Guru Pembimbing I WAYAN NURYANA, S.Pd., M.Pd.
+                @nuryana_wyn, atas keberhasilannya meraih Juara 1 Lomba Menulis
+                Prasi Bulan Bahasa Bali VI Provinsi Bali 🌟🌟🌟
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="berita-terbaru berita-section">
+        <div class="berita-terbaru-header">
+          <h1>Berita Terbaru</h1>
+          <span class="line"></span>
+        </div>
+
+        <div class="berita-container">
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="berita-terbaru berita-section">
+        <div class="berita-terbaru-header">
+          <h1>Prestasi</h1>
+          <span class="line"></span>
+        </div>
+
+        <div class="berita-container">
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+          <div class="berita-card">
+            <a href="berita-clicked.html">
+              <img
+                src="https://scontent.fcgk12-1.fna.fbcdn.net/v/t39.30808-6/466355812_863050332689368_8342702227306686424_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=OzxNelfFG40Q7kNvgFD0sI3&_nc_zt=23&_nc_ht=scontent.fcgk12-1.fna&_nc_gid=ApzShimZ22BDXjivskKPE9Z&oh=00_AYDLJm4ZAnSGZkKqWim6jIMPwUk0fboyNDQacrP9v8UrTQ&oe=673B3BB8"
+                alt=""
+              />
+              <p class="tanggal-terbit">14 November 2024</p>
+              <h3 class="berita-card-title">
+                Novita Sari, Siswa SMKN 1 Denpasar..
+              </h3>
+              <p class="berita-card-desc">
+                Suatu kebanggaan, salah satu siswa SMKN 1 denpasar yaitu Ni
+                Nyoman Novita Sari (XII MM 3) berhasil menjadi satu diantara 24
+                siswa terpilih dari seluruh pelosok negeri...
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="dalam-footer">
+        <div class="isi-footer">
+          <div class="logo">
+            <a href="#"><img src="logo.png" alt="" /></a>
+          </div>
+          <div class="text-logo">
+            <p>
+              "Berkarya dengan Tulus Ikhlas, Cepat, Cerdas, Inovatif, Tuntas,
+              dan Berdikari untuk Mecapai Pemajuan Ilmu Pengetahuan dan
+              Teknologi Kekinian"
+            </p>
+          </div>
+          <div class="sosial-media">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <span class="bawah-footer"></span>
+        </div>
+        <div class="bawah-footer2">
+          <p>Copyright &copy; 2024 SEKIRO team</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

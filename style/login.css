@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --warna-text-putih: #fefefe;
+  --warna-text-putih-nonactive: #fefefe7c;
+  --warna-text-hitam: #080808;
+  --warna-text-hitam-nonactive: #676767;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("Fuchsia2018.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Poppins", sans-serif;
+
+  /* animation: hitam ease-out 2s; */
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  backdrop-filter: blur(12px) saturate(176%);
+  -webkit-backdrop-filter: blur(12px) saturate(176%);
+  background-color: rgba(254, 254, 254, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.login-header {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--warna-text-putih);
+}
+
+.input-group {
+  margin-top: 1rem;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid white;
+  gap: 0.5rem;
+}
+svg {
+  width: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 280px;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--warna-text-putih);
+
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  background: none;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+  color: var(--warna-text-putih-nonactive);
+  font-size: 1.05rem;
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--warna-text-putih);
+  margin-top: 0.7rem;
+  margin-left: 0.2rem;
+
+  font-size: 0.9rem;
+}
+
+.checkbox {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--warna-text-putih);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.checkbox:checked {
+  background-color: var(--warna-text-putih);
+  border-color: var(--warna-text-putih);
+  /* Checkmark */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--warna-text-putih);
+  color: var(--warna-text-hitam);
+  margin-top: 4rem;
+
+  border: none;
+  border-radius: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+
+  transition: 0.3s ease-out;
+}
+
+.login-btn:hover {
+  background-color: #ebebeb;
+}
+
+.belum-punya-akun {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+
+  font-size: 0.8rem;
+  color: var(--warna-text-putih);
+}
+
+.belum-punya-akun a {
+  color: var(--warna-text-putih);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px) saturate(0%);
+    -webkit-backdrop-filter: blur(0px) saturate(0%);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(12px) saturate(0%);
+    -webkit-backdrop-filter: blur(12px) saturate(0%);
+  }
+}
+
+@keyframes hitam {
+  from {
+    filter: brightness(0%);
+  }
+  to {
+    filter: brightness(100%);
+  }
+}
